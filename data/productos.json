@@ -1,9 +1,114 @@
 [
     {
-        "codigo": "123",
-        "nombre": "4",
+        "codigo": "P001",
+        "nombre": "Multimetro Digital",
+        "categoria": "Instrumentos de Medicion",
+        "precio": 150.0,
+        "stock": 10
+    },
+    {
+        "codigo": "P002",
+        "nombre": "Pinza Amperimetrica",
+        "categoria": "Instrumentos de Medicion",
+        "precio": 180.0,
+        "stock": 8
+    },
+    {
+        "codigo": "P003",
+        "nombre": "Tester de Continuidad",
+        "categoria": "Instrumentos de Medicion",
+        "precio": 80.0,
+        "stock": 12
+    },
+    {
+        "codigo": "P004",
+        "nombre": "Cinta Aislante 3M",
+        "categoria": "Materiales Electricos",
+        "precio": 5.0,
+        "stock": 50
+    },
+    {
+        "codigo": "P005",
+        "nombre": "Cable THHN 12 AWG x Metro",
         "categoria": "Cables",
+        "precio": 3.5,
+        "stock": 200
+    },
+    {
+        "codigo": "P006",
+        "nombre": "Cable THHN 14 AWG x Metro",
+        "categoria": "Cables",
+        "precio": 2.8,
+        "stock": 300
+    },
+    {
+        "codigo": "P007",
+        "nombre": "Interruptor Termomagnetico",
+        "categoria": "Proteccion Electrica",
+        "precio": 35.0,
+        "stock": 25
+    },
+    {
+        "codigo": "P008",
+        "nombre": "Disyuntor Diferencial 2P 25A 30mA",
+        "categoria": "Proteccion Electrica",
+        "precio": 60.0,
+        "stock": 15
+    },
+    {
+        "codigo": "P009",
+        "nombre": "Tablero de Distribucion 8 Ctos",
+        "categoria": "Tableros",
+        "precio": 95.0,
+        "stock": 6
+    },
+    {
+        "codigo": "P010",
+        "nombre": "Toma Corriente Industrial 220V",
+        "categoria": "Accesorios Electricos",
         "precio": 12.0,
+        "stock": 30
+    },
+    {
+        "codigo": "P011",
+        "nombre": "Luminaria LED Industrial 50W",
+        "categoria": "Iluminacion",
+        "precio": 85.0,
+        "stock": 10
+    },
+    {
+        "codigo": "P012",
+        "nombre": "Canaleta PVC 25x40 mm",
+        "categoria": "Instalacion",
+        "precio": 8.5,
+        "stock": 100
+    },
+    {
+        "codigo": "P013",
+        "nombre": "Guantes Dielectricos Clase 0",
+        "categoria": "Seguridad Electrica",
+        "precio": 65.0,
+        "stock": 5
+    },
+    {
+        "codigo": "P014",
+        "nombre": "Casco con Visor Electrico",
+        "categoria": "Seguridad Electrica",
+        "precio": 110.0,
+        "stock": 4
+    },
+    {
+        "codigo": "0001",
+        "nombre": "prueba1",
+        "categoria": "Instrumentos de Medicion",
+        "precio": 10.0,
+        "stock": 20
+    },
+    {
+        "codigo": "0002",
+        "nombre": "prueba2",
+        "categoria": "Instrumentos de Medicion",
+        "precio": 40.0,
         "stock": 30
     }
 ]
