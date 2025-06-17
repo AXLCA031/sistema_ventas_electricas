@@ -1,0 +1,9 @@
+[
+    {
+        "codigo": "123",
+        "nombre": "4",
+        "categoria": "Cables",
+        "precio": 12.0,
+        "stock": 30
+    }
+]
