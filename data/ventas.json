@@ -1,0 +1,54 @@
+[
+    {
+        "codigo": "465d5080",
+        "fecha": "2025-06-17 16:54:10",
+        "cliente": "Javier",
+        "productos": [
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 2,
+                "subtotal": 300.0
+            }
+        ],
+        "total": 300.0
+    },
+    {
+        "codigo": "fab14c05",
+        "fecha": "2025-06-17 16:56:42",
+        "cliente": "Jose",
+        "productos": [
+            {
+                "codigo": "P002",
+                "nombre": "Pinza Amperimetrica",
+                "precio_unitario": 180.0,
+                "cantidad": 1,
+                "subtotal": 180.0
+            },
+            {
+                "codigo": "P012",
+                "nombre": "Canaleta PVC 25x40 mm",
+                "precio_unitario": 8.5,
+                "cantidad": 3,
+                "subtotal": 25.5
+            }
+        ],
+        "total": 205.5
+    },
+    {
+        "codigo": "9e478ae6",
+        "fecha": "2025-06-17 17:03:31",
+        "cliente": "Axel",
+        "productos": [
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 4,
+                "subtotal": 600.0
+            }
+        ],
+        "total": 600.0
+    }
+]
