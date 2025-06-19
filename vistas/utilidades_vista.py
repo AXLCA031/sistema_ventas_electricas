@@ -14,7 +14,7 @@ def imprimir_menu(seleccion, opciones, titulo):
     print("\n" * 2)
     for linea in titulo:
         print(linea.center(ancho_terminal))
-    print(("=" * len(titulo[-1])).center(ancho_terminal))  # Subrayado al título principal
+    print(("=" * len(titulo[-1])).center(ancho_terminal))
 
     print("\n")
     for i, opcion in enumerate(opciones):

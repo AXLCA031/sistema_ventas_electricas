@@ -11,14 +11,14 @@
         "nombre": "Pinza Amperimetrica",
         "categoria": "Instrumentos de Medicion",
         "precio": 180.0,
-        "stock": 8
+        "stock": 6
     },
     {
         "codigo": "P003",
         "nombre": "Tester de Continuidad",
         "categoria": "Instrumentos de Medicion",
         "precio": 80.0,
-        "stock": 12
+        "stock": 9
     },
     {
         "codigo": "P004",
@@ -32,7 +32,7 @@
         "nombre": "Cable THHN 12 AWG x Metro",
         "categoria": "Cables",
         "precio": 3.5,
-        "stock": 200
+        "stock": 130
     },
     {
         "codigo": "P006",
@@ -81,14 +81,14 @@
         "nombre": "Canaleta PVC 25x40 mm",
         "categoria": "Instalacion",
         "precio": 8.5,
-        "stock": 100
+        "stock": 98
     },
     {
         "codigo": "P013",
         "nombre": "Guantes Dielectricos Clase 0",
         "categoria": "Seguridad Electrica",
         "precio": 65.0,
-        "stock": 5
+        "stock": 4
     },
     {
         "codigo": "P014",
@@ -102,7 +102,7 @@
         "nombre": "prueba1",
         "categoria": "Instrumentos de Medicion",
         "precio": 10.0,
-        "stock": 20
+        "stock": 15
     },
     {
         "codigo": "0002",

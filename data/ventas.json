@@ -50,5 +50,56 @@
             }
         ],
         "total": 600.0
+    },
+    {
+        "codigo": "5f2ba235",
+        "fecha": "2025-06-17 20:18:32",
+        "cliente": "Edu",
+        "productos": [
+            {
+                "codigo": "P005",
+                "nombre": "Cable THHN 12 AWG x Metro",
+                "precio_unitario": 3.5,
+                "cantidad": 20,
+                "subtotal": 70.0
+            },
+            {
+                "codigo": "P013",
+                "nombre": "Guantes Dielectricos Clase 0",
+                "precio_unitario": 65.0,
+                "cantidad": 1,
+                "subtotal": 65.0
+            },
+            {
+                "codigo": "P002",
+                "nombre": "Pinza Amperimetrica",
+                "precio_unitario": 180.0,
+                "cantidad": 2,
+                "subtotal": 360.0
+            },
+            {
+                "codigo": "P005",
+                "nombre": "Cable THHN 12 AWG x Metro",
+                "precio_unitario": 3.5,
+                "cantidad": 50,
+                "subtotal": 175.0
+            }
+        ],
+        "total": 670.0
+    },
+    {
+        "codigo": "f2ae0b75",
+        "fecha": "2025-06-17 20:19:42",
+        "cliente": "prueba",
+        "productos": [
+            {
+                "codigo": "0001",
+                "nombre": "prueba1",
+                "precio_unitario": 10.0,
+                "cantidad": 3,
+                "subtotal": 30.0
+            }
+        ],
+        "total": 30.0
     }
 ]
