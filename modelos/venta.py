@@ -17,3 +17,14 @@ class Venta:
             f"Productos:\n{productos_str}\n"
             f"Total: S/ {self.total:.2f}"
         )
+
+vent_ejemplo = Venta(
+    codigo="V001", 
+    cliente="Juan Pérez",
+    productos=[
+        {"nombre": "Cable Eléctrico", "cantidad": 2, "precio": 15.00},
+        {"nombre": "Interruptor", "cantidad": 1, "precio": 10.00}
+    ],
+    total=40.00
+)
+print(vent_ejemplo)

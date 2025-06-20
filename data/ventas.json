@@ -101,5 +101,20 @@
             }
         ],
         "total": 30.0
+    },
+    {
+        "codigo": "10f68089",
+        "fecha": "2025-06-19 18:37:57",
+        "cliente": "Pepe",
+        "productos": [
+            {
+                "codigo": "P011",
+                "nombre": "Luminaria LED Industrial 50W",
+                "precio_unitario": 85.0,
+                "cantidad": 2,
+                "subtotal": 170.0
+            }
+        ],
+        "total": 170.0
     }
 ]
