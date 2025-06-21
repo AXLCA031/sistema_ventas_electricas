@@ -7,9 +7,9 @@ def menu_ventas():
     opciones = [
         "Registrar Venta",
         "Eliminar Venta",
-        "Buscar Venta por Código",
+        "Buscar Venta",
         "Generar Boleta",
-        "Listar Ventas (resumen)",
+        "Listar Ventas",
         "Volver al Menú Principal"
     ]
 

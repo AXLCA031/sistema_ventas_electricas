@@ -1,7 +1,6 @@
 [
     {
-        "codigo": "465d5080",
-        "fecha": "2025-06-17 16:54:10",
+        "codigo": "V001",
         "cliente": "Javier",
         "productos": [
             {
@@ -12,11 +11,11 @@
                 "subtotal": 300.0
             }
         ],
-        "total": 300.0
+        "total": 300.0,
+        "fecha": "2025-06-17 16:54:10"
     },
     {
-        "codigo": "fab14c05",
-        "fecha": "2025-06-17 16:56:42",
+        "codigo": "V002",
         "cliente": "Jose",
         "productos": [
             {
@@ -34,11 +33,11 @@
                 "subtotal": 25.5
             }
         ],
-        "total": 205.5
+        "total": 205.5,
+        "fecha": "2025-06-17 16:56:42"
     },
     {
-        "codigo": "9e478ae6",
-        "fecha": "2025-06-17 17:03:31",
+        "codigo": "V003",
         "cliente": "Axel",
         "productos": [
             {
@@ -49,11 +48,11 @@
                 "subtotal": 600.0
             }
         ],
-        "total": 600.0
+        "total": 600.0,
+        "fecha": "2025-06-17 17:03:31"
     },
     {
-        "codigo": "5f2ba235",
-        "fecha": "2025-06-17 20:18:32",
+        "codigo": "V004",
         "cliente": "Edu",
         "productos": [
             {
@@ -85,11 +84,11 @@
                 "subtotal": 175.0
             }
         ],
-        "total": 670.0
+        "total": 670.0,
+        "fecha": "2025-06-17 20:18:32"
     },
     {
-        "codigo": "f2ae0b75",
-        "fecha": "2025-06-17 20:19:42",
+        "codigo": "V005",
         "cliente": "prueba",
         "productos": [
             {
@@ -100,11 +99,11 @@
                 "subtotal": 30.0
             }
         ],
-        "total": 30.0
+        "total": 30.0,
+        "fecha": "2025-06-17 20:19:42"
     },
     {
-        "codigo": "10f68089",
-        "fecha": "2025-06-19 18:37:57",
+        "codigo": "V006",
         "cliente": "Pepe",
         "productos": [
             {
@@ -115,6 +114,87 @@
                 "subtotal": 170.0
             }
         ],
-        "total": 170.0
+        "total": 170.0,
+        "fecha": "2025-06-19 18:37:57"
+    },
+    {
+        "codigo": "V007",
+        "cliente": "Pepe",
+        "productos": [
+            {
+                "codigo": "P013",
+                "nombre": "Guantes Dielectricos Clase 0",
+                "precio_unitario": 65.0,
+                "cantidad": 2,
+                "subtotal": 130.0
+            },
+            {
+                "codigo": "P014",
+                "nombre": "Casco con Visor Electrico",
+                "precio_unitario": 110.0,
+                "cantidad": 2,
+                "subtotal": 220.0
+            },
+            {
+                "codigo": "P008",
+                "nombre": "Disyuntor Diferencial 2P 25A 30mA",
+                "precio_unitario": 60.0,
+                "cantidad": 2,
+                "subtotal": 120.0
+            }
+        ],
+        "total": 470.0,
+        "fecha": "2025-06-21 14:34:48"
+    },
+    {
+        "codigo": "V008",
+        "cliente": "Pedro",
+        "productos": [
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 1,
+                "subtotal": 150.0
+            }
+        ],
+        "total": 150.0,
+        "fecha": "2025-06-21 14:36:26"
+    },
+    {
+        "codigo": "V009",
+        "cliente": "Valetin",
+        "productos": [
+            {
+                "codigo": "P013",
+                "nombre": "Guantes Dielectricos Clase 0",
+                "precio_unitario": 65.0,
+                "cantidad": 2,
+                "subtotal": 130.0
+            },
+            {
+                "codigo": "P014",
+                "nombre": "Casco con Visor Electrico",
+                "precio_unitario": 110.0,
+                "cantidad": 2,
+                "subtotal": 220.0
+            },
+            {
+                "codigo": "P008",
+                "nombre": "Disyuntor Diferencial 2P 25A 30mA",
+                "precio_unitario": 60.0,
+                "cantidad": 2,
+                "subtotal": 120.0
+            },
+            {
+                "codigo": "P020",
+                "nombre": "prueba20",
+                "precio_unitario": 10.0,
+                "cantidad": 5,
+                "subtotal": 50.0
+            }
+        ],
+        "total": 520.0,
+        "fecha": "2025-06-21 14:56:37"
     }
 ]

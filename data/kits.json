@@ -1,0 +1,242 @@
+[
+    {
+        "codigo": "K001",
+        "nombre": "Kit Basico de Medicion",
+        "productos": [
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 1,
+                "subtotal": 150.0
+            },
+            {
+                "codigo": "P003",
+                "nombre": "Tester de Continuidad",
+                "precio_unitario": 80.0,
+                "cantidad": 1,
+                "subtotal": 80.0
+            }
+        ],
+        "total": 230.0,
+        "fecha_creacion": "2025-06-21 14:00:00"
+    },
+    {
+        "codigo": "K002",
+        "nombre": "Kit de Instalacion Electrica",
+        "productos": [
+            {
+                "codigo": "P004",
+                "nombre": "Cinta Aislante 3M",
+                "precio_unitario": 5.0,
+                "cantidad": 2,
+                "subtotal": 10.0
+            },
+            {
+                "codigo": "P005",
+                "nombre": "Cable THHN 12 AWG x Metro",
+                "precio_unitario": 3.5,
+                "cantidad": 10,
+                "subtotal": 35.0
+            },
+            {
+                "codigo": "P007",
+                "nombre": "Interruptor Termomagnetico",
+                "precio_unitario": 35.0,
+                "cantidad": 1,
+                "subtotal": 35.0
+            },
+            {
+                "codigo": "P010",
+                "nombre": "Toma Corriente Industrial 220V",
+                "precio_unitario": 12.0,
+                "cantidad": 1,
+                "subtotal": 12.0
+            }
+        ],
+        "total": 92.0,
+        "fecha_creacion": "2025-06-21 14:00:00"
+    },
+    {
+        "codigo": "K003",
+        "nombre": "Kit Seguridad y Proteccion",
+        "productos": [
+            {
+                "codigo": "P013",
+                "nombre": "Guantes Dielectricos Clase 0",
+                "precio_unitario": 65.0,
+                "cantidad": 1,
+                "subtotal": 65.0
+            },
+            {
+                "codigo": "P014",
+                "nombre": "Casco con Visor Electrico",
+                "precio_unitario": 110.0,
+                "cantidad": 1,
+                "subtotal": 110.0
+            },
+            {
+                "codigo": "P008",
+                "nombre": "Disyuntor Diferencial 2P 25A 30mA",
+                "precio_unitario": 60.0,
+                "cantidad": 1,
+                "subtotal": 60.0
+            }
+        ],
+        "total": 235.0,
+        "fecha_creacion": "2025-06-21 14:00:00"
+    },
+    {
+        "codigo": "K004",
+        "nombre": "Kit Iluminacion Industrial",
+        "productos": [
+            {
+                "codigo": "P011",
+                "nombre": "Luminaria LED Industrial 50W",
+                "precio_unitario": 85.0,
+                "cantidad": 2,
+                "subtotal": 170.0
+            },
+            {
+                "codigo": "P012",
+                "nombre": "Canaleta PVC 25x40 mm",
+                "precio_unitario": 8.5,
+                "cantidad": 5,
+                "subtotal": 42.5
+            }
+        ],
+        "total": 212.5,
+        "fecha_creacion": "2025-06-21 14:00:00"
+    },
+    {
+        "codigo": "K005",
+        "nombre": "Kit Profesional de Medicion",
+        "productos": [
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 1,
+                "subtotal": 150.0
+            },
+            {
+                "codigo": "P002",
+                "nombre": "Pinza Amperimetrica",
+                "precio_unitario": 180.0,
+                "cantidad": 1,
+                "subtotal": 180.0
+            },
+            {
+                "codigo": "P003",
+                "nombre": "Tester de Continuidad",
+                "precio_unitario": 80.0,
+                "cantidad": 1,
+                "subtotal": 80.0
+            }
+        ],
+        "total": 410.0,
+        "fecha_creacion": "2025-06-21 14:00:00"
+    },
+    {
+        "codigo": "K006",
+        "nombre": "Kit de Emergencia Electrica",
+        "productos": [
+            {
+                "codigo": "P015",
+                "nombre": "Linterna LED Recargable",
+                "precio_unitario": 48.0,
+                "cantidad": 1,
+                "subtotal": 48.0
+            },
+            {
+                "codigo": "P019",
+                "nombre": "Luz de Emergencia LED",
+                "precio_unitario": 55.0,
+                "cantidad": 1,
+                "subtotal": 55.0
+            },
+            {
+                "codigo": "P004",
+                "nombre": "Cinta Aislante 3M",
+                "precio_unitario": 5.0,
+                "cantidad": 2,
+                "subtotal": 10.0
+            }
+        ],
+        "total": 113.0,
+        "fecha_creacion": "2025-06-21 14:15:00"
+    },
+    {
+        "codigo": "K007",
+        "nombre": "Kit Herramientas del Electricista",
+        "productos": [
+            {
+                "codigo": "P016",
+                "nombre": "Maletin para Herramientas",
+                "precio_unitario": 90.0,
+                "cantidad": 1,
+                "subtotal": 90.0
+            },
+            {
+                "codigo": "P017",
+                "nombre": "Juego de Destornilladores Aislados",
+                "precio_unitario": 65.0,
+                "cantidad": 1,
+                "subtotal": 65.0
+            },
+            {
+                "codigo": "P004",
+                "nombre": "Cinta Aislante 3M",
+                "precio_unitario": 5.0,
+                "cantidad": 3,
+                "subtotal": 15.0
+            }
+        ],
+        "total": 170.0,
+        "fecha_creacion": "2025-06-21 14:15:00"
+    },
+    {
+        "codigo": "K008",
+        "nombre": "Kit de Deteccion y Medicion",
+        "productos": [
+            {
+                "codigo": "P018",
+                "nombre": "Detector de Voltaje sin Contacto",
+                "precio_unitario": 45.0,
+                "cantidad": 1,
+                "subtotal": 45.0
+            },
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 1,
+                "subtotal": 150.0
+            },
+            {
+                "codigo": "P002",
+                "nombre": "Pinza Amperimetrica",
+                "precio_unitario": 180.0,
+                "cantidad": 1,
+                "subtotal": 180.0
+            }
+        ],
+        "total": 375.0,
+        "fecha_creacion": "2025-06-21 14:15:00"
+    },
+    {
+        "codigo": "K009",
+        "nombre": "pruebaKit",
+        "productos": [
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 1,
+                "subtotal": 150.0
+            }
+        ],
+        "total": 150.0,
+        "fecha_creacion": "2025-06-21 14:36:06"
+    }
+]

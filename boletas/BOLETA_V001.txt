@@ -1,0 +1,18 @@
+               ELECTROPERU S.A.C
+             RUC: 20481234567
+      Av. Industrial 123, Lima, Perú
+        Teléfono: (01) 234-5678
+        -----------------------------------
+               BOLETA DE VENTA: V001
+        -----------------------------------
+Fecha de Emisión: 2025-06-17 16:54:10
+Cliente: Javier
+        -----------------------------------
+Producto               Cant.  P.Unit  Subtotal
+--------               -----  ------  --------
+Multimetro Digital       2  150.00   300.00
+        -----------------------------------
+                       TOTAL: S/. 300.00
+        -----------------------------------
+       ¡Gracias por su preferencia!
+

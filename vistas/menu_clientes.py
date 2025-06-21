@@ -1,7 +1,7 @@
 from vistas.utilidades_vista import limpiar_pantalla
 
 
-def menu_cotizacion():
+def menu_clientes():
     limpiar_pantalla()
-    print("Menú de cotización (futuro)")
+    print("Menú de clientes (futuro)")
     input("Presiona Enter para volver...")

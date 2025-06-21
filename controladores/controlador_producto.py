@@ -20,13 +20,13 @@ def cargar_productos():
     try:
         with open(RUTA_PRODUCTOS, "r") as f:
             data = json.load(f)
-            return [Producto(**p) for p in data]
+            return [Producto.from_dict(p) for p in data]
     except FileNotFoundError:
         return []
 
 def guardar_productos(lista_productos):
     with open(RUTA_PRODUCTOS, "w") as f:
-        json.dump([p.__dict__ for p in lista_productos], f, indent=4)
+        json.dump([p.to_dict() for p in lista_productos], f, indent=4)
 
 def listar_productos(productos):
     print("\nProductos en inventario:\n")
@@ -35,17 +35,18 @@ def listar_productos(productos):
 
 def generar_codigo(productos):
     if not productos:
-        return "0001"
-    
-    codigos = [int(p.codigo) for p in productos if p.codigo.isdigit()]
-    siguiente = max(codigos, default=0) + 1
-    return f"{siguiente:04d}"
+        return "P001"
+
+    codigos = [p.codigo for p in productos if p.codigo.startswith("P") and p.codigo[1:].isdigit()]
+    numeros = [int(codigo[1:]) for codigo in codigos]
+    siguiente_numero = max(numeros, default=0) + 1
+    return f"P{siguiente_numero:03d}"
 
 def seleccionar_categoria():
     print("\nSeleccione la categoría:")
     for idx, cat in enumerate(CATEGORIAS, 1):
         print(f"{idx}. {cat}")
-    
+
     while True:
         try:
             opcion = int(input("Ingrese el número de la categoría: "))
@@ -63,7 +64,7 @@ def registrar_producto(productos):
 
     nombre = input("Nombre: ")
     categoria = seleccionar_categoria()
-    
+
     try:
         precio = float(input("Precio: "))
         stock = int(input("Stock inicial: "))
@@ -74,9 +75,8 @@ def registrar_producto(productos):
     nuevo = Producto(codigo_generado, nombre, categoria, precio, stock)
     productos.append(nuevo)
     guardar_productos(productos)
-    
-    print(f"\nProducto agregado correctamente con código: {codigo_generado}")
 
+    print(f"\nProducto agregado correctamente con código: {codigo_generado}")
 
 def editar_producto(productos):
     if not productos:
@@ -116,8 +116,6 @@ def editar_producto(productos):
             return
 
     print("Producto no encontrado.")
-
-
 
 def eliminar_producto(productos):
     if not productos:

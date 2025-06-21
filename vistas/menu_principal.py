@@ -1,7 +1,7 @@
 from vistas.utilidades_vista import menu_interactivo
 from vistas.menu_productos import menu_productos
 from vistas.menu_kits import menu_kits
-from vistas.menu_cotizacion import menu_cotizacion
+from vistas.menu_clientes import menu_clientes
 from vistas.menu_ventas import menu_ventas
 import sys
 
@@ -9,7 +9,7 @@ def mostrar_menu_principal():
     opciones = [
         "Menú Productos",
         "Menú Kits",
-        "Menú Cotización",
+        "Menú Clientes",
         "Menú Ventas",
         "Salir"
     ]
@@ -34,7 +34,7 @@ def ejecutar_menu_principal():
         elif opcion == 1:
             menu_kits()
         elif opcion == 2:
-            menu_cotizacion()
+            menu_clientes()
         elif opcion == 3:
             menu_ventas()
         elif opcion == 4:
