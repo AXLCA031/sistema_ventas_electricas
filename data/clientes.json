@@ -1,0 +1,74 @@
+[
+    {
+        "codigo": "C001",
+        "nombre": "Aynaya",
+        "telefono": "987654321",
+        "direccion": "Av. Javier Prado 123",
+        "correo": "ayni@gmail.com",
+        "cantidad_ventas": 0
+    },
+    {
+        "codigo": "C002",
+        "nombre": "Javier",
+        "telefono": "912345678",
+        "direccion": "Calle Las Flores 101",
+        "correo": "javier@gmail.com",
+        "cantidad_ventas": 1
+    },
+    {
+        "codigo": "C003",
+        "nombre": "Jose",
+        "telefono": "913456789",
+        "direccion": "Av. Arequipa 456",
+        "correo": "jose@gmail.com",
+        "cantidad_ventas": 1
+    },
+    {
+        "codigo": "C004",
+        "nombre": "Axel",
+        "telefono": "914567890",
+        "direccion": "Jr. Los Sauces 89",
+        "correo": "axel@gmail.com",
+        "cantidad_ventas": 1
+    },
+    {
+        "codigo": "C005",
+        "nombre": "Edu",
+        "telefono": "915678901",
+        "direccion": "Av. Benavides 321",
+        "correo": "edu@gmail.com",
+        "cantidad_ventas": 1
+    },
+    {
+        "codigo": "C006",
+        "nombre": "prueba",
+        "telefono": "916789012",
+        "direccion": "Calle Inventada 123",
+        "correo": "prueba@gmail.com",
+        "cantidad_ventas": 1
+    },
+    {
+        "codigo": "C007",
+        "nombre": "Pepe",
+        "telefono": "917890123",
+        "direccion": "Pasaje Los Olivos 77",
+        "correo": "pepe@gmail.com",
+        "cantidad_ventas": 2
+    },
+    {
+        "codigo": "C008",
+        "nombre": "Pedro",
+        "telefono": "918901234",
+        "direccion": "Calle Real 42",
+        "correo": "pedro@gmail.com",
+        "cantidad_ventas": 1
+    },
+    {
+        "codigo": "C009",
+        "nombre": "Valetin",
+        "telefono": "919012345",
+        "direccion": "Av. Universitaria 900",
+        "correo": "valetin@gmail.com",
+        "cantidad_ventas": 1
+    }
+]

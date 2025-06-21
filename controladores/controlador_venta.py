@@ -3,8 +3,10 @@ import os
 from datetime import datetime
 from modelos.venta import Venta
 from modelos.producto import Producto
+from modelos.cliente import Cliente
 from controladores.controlador_producto import cargar_productos, guardar_productos
 from controladores.controlador_kit import cargar_kits
+from controladores.controlador_cliente import cargar_clientes, guardar_clientes
 
 RUTA_VENTAS = "data/ventas.json"
 
@@ -39,20 +41,38 @@ def generar_codigo(ventas):
             max_num = max(max_num, num)
     return f"V{max_num + 1:03d}"
 
-
 def registrar_venta(ventas):
     productos_disponibles = cargar_productos()
     kits_disponibles = cargar_kits()
+    clientes = cargar_clientes()
 
     if not productos_disponibles:
         print("No hay productos disponibles para registrar una venta.")
         input("Presione Enter para continuar...")
         return
 
+    print("\nClientes disponibles:")
+    for c in clientes:
+        print(f"Código: {c.codigo} | Nombre: {c.nombre}")
+
+    codigo_cliente = input("Ingrese el código del cliente: ").strip()
+    cliente = next((c for c in clientes if c.codigo == codigo_cliente), None)
+
+    if not cliente:
+        print("Cliente no encontrado. Vamos a registrar uno nuevo.")
+        nombre = input("Nombre: ")
+        telefono = input("Teléfono: ")
+        direccion = input("Dirección: ")
+        correo = input("Correo: ")
+        cliente = Cliente(codigo_cliente, nombre, telefono, direccion, correo, 0)
+        clientes.append(cliente)
+        guardar_clientes(clientes)
+        print("Cliente registrado exitosamente.")
+
+    cliente.cantidad_ventas += 1
+
     codigo_venta = generar_codigo(ventas)
     fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    cliente = input("Nombre del cliente: ")
-
     productos_venta = []
     total = 0.0
 
@@ -152,10 +172,11 @@ def registrar_venta(ventas):
         input("Presione Enter para continuar...")
         return
 
-    nueva_venta = Venta(codigo_venta, cliente, productos_venta, total, fecha)
+    nueva_venta = Venta(codigo_venta, f"{cliente.codigo} - {cliente.nombre}", productos_venta, total, fecha)
     ventas.append(nueva_venta)
     guardar_ventas(ventas)
     guardar_productos(productos_disponibles)
+    guardar_clientes(clientes)
 
     print(f"\nVenta '{codigo_venta}' registrada exitosamente.")
     input("Presione Enter para continuar...")
