@@ -29,9 +29,32 @@ def guardar_productos(lista_productos):
         json.dump([p.to_dict() for p in lista_productos], f, indent=4)
 
 def listar_productos(productos):
-    print("\nProductos en inventario:\n")
-    for p in productos:
-        print(p)
+    if not productos:
+        print("\nNo hay productos registrados.")
+        return
+
+    print("\n PRODUCTOS EN INVENTARIO:\n")
+
+    suficientes = [p for p in productos if p.stock >= 5]
+    bajos = [p for p in productos if p.stock < 5]
+
+    if suficientes:
+        print(" Productos con stock suficiente:\n")
+        for p in suficientes:
+            print(p)
+    else:
+        print(" No hay productos con stock suficiente.\n")
+
+    print("\n" + "=" * 50 + "\n")
+
+    if bajos:
+        print(" Productos con stock bajo (menos de 5 unidades):\n")
+        for p in bajos:
+            print(f"{p}  <-   Bajo stock")
+        print("\n  Se recomienda reabastecer estos productos.")
+    else:
+        print(" No hay productos con stock bajo.")
+
 
 def generar_codigo(productos):
     if not productos:
@@ -95,8 +118,6 @@ def editar_producto(productos):
             cambiar_categoria = input("¿Deseas cambiar la categoría? (s/n): ").lower()
             if cambiar_categoria == "s":
                 nueva_categoria = seleccionar_categoria()
-                if nueva_categoria == "Otros":
-                    nueva_categoria = input("Escribe la nueva categoría personalizada: ")
             else:
                 nueva_categoria = producto.categoria
 
@@ -140,3 +161,4 @@ def eliminar_producto(productos):
 
     if not encontrado:
         print("Producto no encontrado.")
+

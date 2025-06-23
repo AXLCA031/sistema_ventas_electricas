@@ -70,5 +70,21 @@
         "direccion": "Av. Universitaria 900",
         "correo": "valetin@gmail.com",
         "cantidad_ventas": 1
+    },
+    {
+        "codigo": "C010",
+        "nombre": "Antonio",
+        "telefono": "912312312",
+        "direccion": "Calle Falsa 123",
+        "correo": "antonio@gmail.com",
+        "cantidad_ventas": 1
+    },
+    {
+        "codigo": "C011",
+        "nombre": "AAAA",
+        "telefono": "999999999",
+        "direccion": "aaa aaa 123",
+        "correo": "aaa@aaa.com",
+        "cantidad_ventas": 0
     }
 ]

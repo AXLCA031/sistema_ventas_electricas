@@ -12,7 +12,8 @@
             }
         ],
         "total": 300.0,
-        "fecha": "2025-06-17 16:54:10"
+        "fecha": "2025-06-17 16:54:10",
+        "kits": []
     },
     {
         "codigo": "V002",
@@ -34,7 +35,8 @@
             }
         ],
         "total": 205.5,
-        "fecha": "2025-06-17 16:56:42"
+        "fecha": "2025-06-17 16:56:42",
+        "kits": []
     },
     {
         "codigo": "V003",
@@ -49,7 +51,8 @@
             }
         ],
         "total": 600.0,
-        "fecha": "2025-06-17 17:03:31"
+        "fecha": "2025-06-17 17:03:31",
+        "kits": []
     },
     {
         "codigo": "V004",
@@ -85,7 +88,8 @@
             }
         ],
         "total": 670.0,
-        "fecha": "2025-06-17 20:18:32"
+        "fecha": "2025-06-17 20:18:32",
+        "kits": []
     },
     {
         "codigo": "V005",
@@ -100,7 +104,8 @@
             }
         ],
         "total": 30.0,
-        "fecha": "2025-06-17 20:19:42"
+        "fecha": "2025-06-17 20:19:42",
+        "kits": []
     },
     {
         "codigo": "V006",
@@ -115,7 +120,8 @@
             }
         ],
         "total": 170.0,
-        "fecha": "2025-06-19 18:37:57"
+        "fecha": "2025-06-19 18:37:57",
+        "kits": []
     },
     {
         "codigo": "V007",
@@ -144,7 +150,8 @@
             }
         ],
         "total": 470.0,
-        "fecha": "2025-06-21 14:34:48"
+        "fecha": "2025-06-21 14:34:48",
+        "kits": []
     },
     {
         "codigo": "V008",
@@ -159,7 +166,8 @@
             }
         ],
         "total": 150.0,
-        "fecha": "2025-06-21 14:36:26"
+        "fecha": "2025-06-21 14:36:26",
+        "kits": []
     },
     {
         "codigo": "V009",
@@ -195,6 +203,60 @@
             }
         ],
         "total": 520.0,
-        "fecha": "2025-06-21 14:56:37"
+        "fecha": "2025-06-21 14:56:37",
+        "kits": []
+    },
+    {
+        "codigo": "V010",
+        "cliente": "Antonio",
+        "productos": [
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 2,
+                "subtotal": 300.0
+            },
+            {
+                "codigo": "P003",
+                "nombre": "Tester de Continuidad",
+                "precio_unitario": 80.0,
+                "cantidad": 2,
+                "subtotal": 160.0
+            },
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 3,
+                "subtotal": 450.0
+            },
+            {
+                "codigo": "P002",
+                "nombre": "Pinza Amperimetrica",
+                "precio_unitario": 180.0,
+                "cantidad": 3,
+                "subtotal": 540.0
+            },
+            {
+                "codigo": "P003",
+                "nombre": "Tester de Continuidad",
+                "precio_unitario": 80.0,
+                "cantidad": 3,
+                "subtotal": 240.0
+            }
+        ],
+        "total": 1690.0,
+        "fecha": "2025-06-23 18:06:20",
+        "kits": [
+            {
+                "nombre": "Kit Basico de Medicion",
+                "cantidad": 2
+            },
+            {
+                "nombre": "Kit Profesional de Medicion",
+                "cantidad": 3
+            }
+        ]
     }
 ]

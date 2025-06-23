@@ -4,21 +4,21 @@
         "nombre": "Multimetro Digital",
         "categoria": "Instrumentos de Medicion",
         "precio": 150.0,
-        "stock": 5
+        "stock": 100
     },
     {
         "codigo": "P002",
         "nombre": "Pinza Amperimetrica",
         "categoria": "Instrumentos de Medicion",
         "precio": 180.0,
-        "stock": 6
+        "stock": 100
     },
     {
         "codigo": "P003",
         "nombre": "Tester de Continuidad",
         "categoria": "Instrumentos de Medicion",
         "precio": 80.0,
-        "stock": 9
+        "stock": 100
     },
     {
         "codigo": "P004",

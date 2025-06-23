@@ -6,7 +6,8 @@ from modelos.producto import Producto
 from modelos.cliente import Cliente
 from controladores.controlador_producto import cargar_productos, guardar_productos
 from controladores.controlador_kit import cargar_kits
-from controladores.controlador_cliente import cargar_clientes, guardar_clientes
+from controladores.controlador_cliente import cargar_clientes, guardar_clientes, generar_codigo_cliente
+
 
 RUTA_VENTAS = "data/ventas.json"
 
@@ -55,25 +56,38 @@ def registrar_venta(ventas):
     for c in clientes:
         print(f"Código: {c.codigo} | Nombre: {c.nombre}")
 
-    codigo_cliente = input("Ingrese el código del cliente: ").strip()
-    cliente = next((c for c in clientes if c.codigo == codigo_cliente), None)
+    while True:
+        codigo_cliente = input("Ingrese el código del cliente: ").strip()
+        cliente = next((c for c in clientes if c.codigo == codigo_cliente), None)
 
-    if not cliente:
-        print("Cliente no encontrado. Vamos a registrar uno nuevo.")
-        nombre = input("Nombre: ")
-        telefono = input("Teléfono: ")
-        direccion = input("Dirección: ")
-        correo = input("Correo: ")
-        cliente = Cliente(codigo_cliente, nombre, telefono, direccion, correo, 0)
-        clientes.append(cliente)
-        guardar_clientes(clientes)
-        print("Cliente registrado exitosamente.")
+        if cliente:
+            break
+        else:
+            print("Código inválido. ¿Desea registrar un nuevo cliente? (S/N)")
+            respuesta = input().strip().lower()
+            if respuesta == "s":
+                codigo_cliente = generar_codigo_cliente(clientes)
+                print(f"\n=== Registro de nuevo cliente (Código: {codigo_cliente}) ===")
+                nombre = input("Nombre: ")
+                telefono = input("Teléfono: ")
+                direccion = input("Dirección: ")
+                correo = input("Correo: ")
+
+                cliente = Cliente(codigo_cliente, nombre, telefono, direccion, correo, cantidad_ventas=0)
+                clientes.append(cliente)
+                guardar_clientes(clientes)
+                print("Cliente registrado exitosamente.")
+                break
+            else:
+                print("Debe ingresar un código válido para continuar.")
+
 
     cliente.cantidad_ventas += 1
 
     codigo_venta = generar_codigo(ventas)
     fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     productos_venta = []
+    kits_vendidos = []
     total = 0.0
 
     while True:
@@ -161,6 +175,11 @@ def registrar_venta(ventas):
                     "subtotal": item["precio_unitario"] * item["cantidad"] * cantidad_kit
                 })
 
+            kits_vendidos.append({
+                "nombre": kit.nombre,
+                "cantidad": cantidad_kit
+            })
+
             total += kit.total * cantidad_kit
             print(f"Kit agregado correctamente: {kit.nombre} x {cantidad_kit}")
 
@@ -172,7 +191,15 @@ def registrar_venta(ventas):
         input("Presione Enter para continuar...")
         return
 
-    nueva_venta = Venta(codigo_venta, f"{cliente.codigo} - {cliente.nombre}", productos_venta, total, fecha)
+    nueva_venta = Venta(
+        codigo=codigo_venta,
+        cliente=f"{cliente.codigo} - {cliente.nombre}",
+        productos=productos_venta,
+        total=total,
+        fecha=fecha,
+        kits=kits_vendidos if kits_vendidos else []
+    )
+
     ventas.append(nueva_venta)
     guardar_ventas(ventas)
     guardar_productos(productos_disponibles)

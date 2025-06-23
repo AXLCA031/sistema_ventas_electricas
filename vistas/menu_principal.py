@@ -3,6 +3,7 @@ from vistas.menu_productos import menu_productos
 from vistas.menu_kits import menu_kits
 from vistas.menu_clientes import menu_clientes
 from vistas.menu_ventas import menu_ventas
+from vistas.menu_reportes import menu_reportes
 import sys
 
 def mostrar_menu_principal():
@@ -11,6 +12,7 @@ def mostrar_menu_principal():
         "Menú Kits",
         "Menú Clientes",
         "Menú Ventas",
+        "Menú Reportes",
         "Salir"
     ]
 
@@ -38,4 +40,6 @@ def ejecutar_menu_principal():
         elif opcion == 3:
             menu_ventas()
         elif opcion == 4:
+            menu_reportes()
+        elif opcion == 5:
             sys.exit(0)
