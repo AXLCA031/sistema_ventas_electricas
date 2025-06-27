@@ -5,7 +5,7 @@ from modelos.cliente import Cliente
 import matplotlib.pyplot as plt
 
 
-def productos_mas_vendidos(ventas, top_n=5):
+def productos_mas_vendidos(ventas, top_n=10):
     contador = Counter()
     for venta in ventas:
         for producto in venta.productos:
@@ -35,7 +35,7 @@ def productos_mas_vendidos(ventas, top_n=5):
     input("\nPresione Enter para continuar...")
 
 
-def kits_mas_vendidos(ventas, top_n=5):
+def kits_mas_vendidos(ventas, top_n=10):
     contador_kits = Counter()
     for venta in ventas:
         for kit in getattr(venta, "kits", []):
@@ -66,7 +66,7 @@ def kits_mas_vendidos(ventas, top_n=5):
     input("\nPresione Enter para continuar...")
 
 
-def clientes_con_mas_ventas(clientes, top_n=5):
+def clientes_con_mas_ventas(clientes, top_n=10):
     clientes_ordenados = sorted(clientes, key=lambda c: c.cantidad_ventas, reverse=True)[:top_n]
 
     print(f"\nTop {top_n} clientes con más ventas:\n")
@@ -125,7 +125,7 @@ def total_ingresos(ventas):
     input("\nPresione Enter para continuar...")
 
 
-def categorias_mas_vendidas(ventas, productos_disponibles, top_n=5):
+def categorias_mas_vendidas(ventas, productos_disponibles, top_n=10):
     categoria_counter = Counter()
 
     productos_dict = {p.codigo: p for p in productos_disponibles}
