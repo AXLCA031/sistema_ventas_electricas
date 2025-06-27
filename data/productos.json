@@ -4,14 +4,14 @@
         "nombre": "Multimetro Digital",
         "categoria": "Instrumentos de Medicion",
         "precio": 150.0,
-        "stock": 100
+        "stock": 97
     },
     {
         "codigo": "P002",
         "nombre": "Pinza Amperimetrica",
         "categoria": "Instrumentos de Medicion",
         "precio": 180.0,
-        "stock": 100
+        "stock": 97
     },
     {
         "codigo": "P003",
@@ -67,7 +67,7 @@
         "nombre": "Toma Corriente Industrial 220V",
         "categoria": "Accesorios Electricos",
         "precio": 12.0,
-        "stock": 30
+        "stock": 28
     },
     {
         "codigo": "P011",
@@ -81,7 +81,7 @@
         "nombre": "Canaleta PVC 25x40 mm",
         "categoria": "Instalacion",
         "precio": 8.5,
-        "stock": 98
+        "stock": 88
     },
     {
         "codigo": "P013",
@@ -123,7 +123,7 @@
         "nombre": "Detector de Voltaje sin Contacto",
         "categoria": "Instrumentos de Medicion",
         "precio": 45.0,
-        "stock": 25
+        "stock": 22
     },
     {
         "codigo": "P019",

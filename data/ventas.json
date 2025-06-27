@@ -258,5 +258,54 @@
                 "cantidad": 3
             }
         ]
+    },
+    {
+        "codigo": "V011",
+        "cliente": "Edu",
+        "productos": [
+            {
+                "codigo": "P012",
+                "nombre": "Canaleta PVC 25x40 mm",
+                "precio_unitario": 8.5,
+                "cantidad": 10,
+                "subtotal": 85.0
+            },
+            {
+                "codigo": "P010",
+                "nombre": "Toma Corriente Industrial 220V",
+                "precio_unitario": 12.0,
+                "cantidad": 2,
+                "subtotal": 24.0
+            },
+            {
+                "codigo": "P018",
+                "nombre": "Detector de Voltaje sin Contacto",
+                "precio_unitario": 45.0,
+                "cantidad": 3,
+                "subtotal": 135.0
+            },
+            {
+                "codigo": "P001",
+                "nombre": "Multimetro Digital",
+                "precio_unitario": 150.0,
+                "cantidad": 3,
+                "subtotal": 450.0
+            },
+            {
+                "codigo": "P002",
+                "nombre": "Pinza Amperimetrica",
+                "precio_unitario": 180.0,
+                "cantidad": 3,
+                "subtotal": 540.0
+            }
+        ],
+        "total": 1234.0,
+        "fecha": "2025-06-26 19:07:56",
+        "kits": [
+            {
+                "nombre": "Kit de Deteccion y Medicion",
+                "cantidad": 3
+            }
+        ]
     }
 ]

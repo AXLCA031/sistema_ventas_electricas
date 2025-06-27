@@ -193,7 +193,7 @@ def registrar_venta(ventas):
 
     nueva_venta = Venta(
         codigo=codigo_venta,
-        cliente=f"{cliente.codigo} - {cliente.nombre}",
+        cliente=cliente.nombre,
         productos=productos_venta,
         total=total,
         fecha=fecha,
